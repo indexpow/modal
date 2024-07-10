@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+<style>
+    .html {
+    scroll-behavior: smooth;
+    }    
+    .modal{
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,.50);
+    }
+    .modalcontent{
+        background-color: #fefefe;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 1000px;
+        z-index: 2;
+        height: 600px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        border-radius: 30px;
+    }
+    .close{
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .close:hover,
+    .close:focus{
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    body{
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .table{
+        overflow-y: auto;
+        margin: 120px;
+        height: 580px;
+        top: 50%;
+        left: 50%;
+        border: 20px;
+    }
+
+    .tgt{
+        position: fixed; top: 0;
+        background-color: #fefefe;
+        width: 120px;
+        top: 13%;
+        
+    }
+    
+
+    
+</style>
+
+
+
+
+
+
+
+<body>
+
+<div>
+    <div style="display: flex;">
+        <div class="table" style="left: 50%;">
+            <table>
+                <thead class="tgt">
+                    <tr>
+                        <th>지역</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h1 class="btn">강북구</h1>
+            <div data-aos="zoom-in"></div>
+            <div class="modal">
+                <div class="modalcontent">
+                    <span class="close">&times;</span>
+                    <h2>강북구</h2>
+                    <img style="height: 100px; width: 100px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUDPvFuSWugBJwCg1FGecdrC6VsXnlFOGlX9N2xYeeIkghYG4aj3El5-7BsvKsZSDxXjE&usqp=CAU" alt="강북구">
+                    <table tableborder="1" width="30%" height=50 tablebgcolor=#11a9c1 bordercolor="blue" cellspacing="5">
+                        <thead>
+                            <tr>
+                                <th >하위행정구역</td>
+                                <th >면적</td>
+                                <th >인구수</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td >13동</td>
+                                <td >23.6㎢</td>
+                                <td >285,054명</td>
+                            </tr>
+                        </tbody>  
+                    </table>
+                </div>
+            </div>
+
+            <h1 class="btn">강남구</h1>
+            <div data-aos="zoom-in"></div>
+            <div class="modal">
+                <div class="modalcontent">
+                    <span class="close">&times;</span>
+                    <h2>강남구</h2>
+                    <img style="height: 100px;" width="150px" src="https://www.gangnam.go.kr/assets/images/contents/04/040601_img02.png" alt="강남구">
+                    <table tableborder="1" width="30%" height=50 tablebgcolor=#11a9c1 bordercolor="blue" cellspacing="5">
+                        <thead>
+                            <tr>
+                                <th >하위행정구역</td>
+                                <th >면적</td>
+                                <th >인구수</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td >22동</td>
+                                <td >39.51㎢</td>
+                                <td >556,570명</td>
+                            </tr>
+                        </tbody>  
+                    </table>
+                </div>
+            </div>
+
+            <h1 class="btn">서초구</h1>
+            <div data-aos="zoom-in"></div>
+            <div class="modal">
+                <div class="modalcontent">
+                    <span class="close">&times;</span>
+                    <h2>서초구</h2>
+                    <img style="height: 100px;" width="100px" src="https://yt3.googleusercontent.com/PoFxzvVBCX7seSc6WK1e9V7oKH_b6CJ-VwQ5lcVpm1n1aAY384yrrqyjemoUycHWurwn8V_92Q=s900-c-k-c0x00ffffff-no-rj" alt="서처구">
+                    <table tableborder="1" width="30%" height=50 tablebgcolor=#11a9c1 bordercolor="blue" cellspacing="5">
+                        <thead>
+                            <tr>
+                                <th >하위행정구역</td>
+                                <th >면적</td>
+                                <th >인구수</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td >18동</td>
+                                <td >46.98㎢</td>
+                                <td >407,404명</td>
+                            </tr>
+                        </tbody>  
+                    </table>
+                </div>
+            </div>
+
+            <h1 class="btn">강동구</h1>
+            <div data-aos="zoom-in"></div>
+            <div class="modal">
+                <div class="modalcontent">
+                    <span class="close">&times;</span>
+                    <h2>강동구</h2>
+                    <img style="height: 100px;" width="100px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuf8p72VTHd97opCT8krq8GqZbWgDxGjaPNA&s" alt="강동구">
+                    <table tableborder="1" width="30%" height=50 tablebgcolor=#11a9c1 bordercolor="blue" cellspacing="5">
+                        <thead>
+                            <tr>
+                                <th >하위행정구역</td>
+                                <th >면적</td>
+                                <th >인구수</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td >19동</td>
+                                <td >24.59㎢</td>
+                                <td >462,646명</td>
+                            </tr>
+                        </tbody>  
+                    </table>
+                </div>
+            </div>
+
+            <h1 class="btn">송파구</h1>
+            <div class="modal">
+                <div class="modalcontent">
+                    <span class="close">&times;</span>
+                    <h2>송파구</h2>
+                    <img style="height: 100px;" width="100px" src="https://i.namu.wiki/i/4ljZVa3dNnpKq-ykzU2Nfq97gxox-N0ZKqfB8ky0WWzMCvc31KtaIkmfwa-AUkY3x6WpLMC2tW5Q38erv-zMhQ.svg" alt="송파구">
+                    <table tableborder="1" width="30%" height=50 tablebgcolor=#11a9c1 bordercolor="blue" cellspacing="5">
+                        <thead>
+                            <tr>
+                                <th >하위행정구역</td>
+                                <th >면적</td>
+                                <th >인구수</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td >27동</td>
+                                <td >33.87㎢</td>
+                                <td >652,752명</td>
+                            </tr>
+                        </tbody>  
+                    </table>
+                </div>
+            </div>
+
+            <h1 class="btn">동작구</h1>
+            <div data-aos="zoom-in"></div>
+            <div class="modal">
+                <div class="modalcontent">
+                    <span class="close">&times;</span>
+                    <h2>동작구</h2>
+                    <img style="height: 100px;" width="100px" src="https://i.namu.wiki/i/k1JKIGjKOQJNwYvmKSFFYMquVcSJ7SCrd1Vg9DOKmVllLsFYvzSlSlSkkSnLHXbWbpZZs0Sx2TaLBCn2cHniAw.svg" alt="동작구">
+                    <table tableborder="1" width="30%" height=50 tablebgcolor=#11a9c1 bordercolor="blue" cellspacing="5">
+                        <thead>
+                            <tr>
+                                <th >하위행정구역</td>
+                                <th >면적</td>
+                                <th >인구수</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td >15동</td>
+                                <td >16.35㎢</td>
+                                <td >378,324명</td>
+                            </tr>
+                        </tbody>  
+                    </table>
+                </div>
+            </div>
+
+            <h1 class="btn">관악구</h1>
+            <div data-aos="zoom-in"></div>
+            <div class="modal">
+                <div class="modalcontent">
+                    <span class="close">&times;</span>
+                    <h2>관악구</h2>
+                    <img style="height: 100px;" width="100px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT899E6kulz2RCKOy6H6erp6DofqkoPYJELmQ&s" alt="관악구">
+                    <table tableborder="1" width="30%" height=50 tablebgcolor=#11a9c1 bordercolor="blue" cellspacing="5">
+                        <thead>
+                            <tr>
+                                <th >하위행정구역</td>
+                                <th >면적</td>
+                                <th >인구수</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td >21동</td>
+                                <td >29.57㎢</td>
+                                <td >481,145명</td>
+                            </tr>
+                        </tbody>  
+                    </table>
+                </div>
+            </div>
+
+            <h1 class="btn">영등포구</h1>
+            <div data-aos="zoom-in"></div>
+            <div class="modal">
+                <div class="modalcontent">
+                    <span class="close">&times;</span>
+                    <h2>영등포구</h2>
+                    <img style="height: 100px;" width="200px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTebPYdwBwQI4yX5VCZaRvjcV84J1hh4nQy5w&s" alt="영등포구">
+                    <table tableborder="1" width="30%" height=50 tablebgcolor=#11a9c1 bordercolor="blue" cellspacing="5">
+                        <thead>
+                            <tr>
+                                <th >하위행정구역</td>
+                                <th >면적</td>
+                                <th >인구수</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td >18동</td>
+                                <td >24.55㎢</td>
+                                <td >375,040명</td>
+                            </tr>
+                        </tbody>  
+                    </table>
+                </div>
+            </div>
+
+            <h1 class="btn">금천구</h1>
+            <div data-aos="zoom-in"></div>
+            <div class="modal">
+                <div class="modalcontent">
+                    <span class="close">&times;</span>
+                    <h2>금천구</h2>
+                    <img style="height: 100px;" width="100px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZjkyAbGzX6WRCnyrU9A1lI58GCpvYdTtz5g&s" alt="금천구">
+                    <table tableborder="1" width="30%" height=50 tablebgcolor=#11a9c1 bordercolor="blue" cellspacing="5">
+                        <thead>
+                            <tr>
+                                <th >하위행정구역</td>
+                                <th >면적</td>
+                                <th >인구수</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td >10동</td>
+                                <td >13.02㎢</td>
+                                <td >226,672명</td>
+                            </tr>
+                        </tbody>  
+                    </table>
+                </div>
+            </div>
+
+            <h1 class="btn">구로구</h1>
+            <div data-aos="zoom-in"></div>
+            <div class="modal">
+                <div class="modalcontent">
+                    <span class="close">&times;</span>
+                    <h2>구로구</h2>
+                    <img style="height: 100px;" width="150px" src="https://img.khan.co.kr/news/2021/11/17/l_2021111801002298400211561.jpg" alt="구로구">
+                    <table tableborder="1" width="30%" height=50 tablebgcolor=#11a9c1 bordercolor="blue" cellspacing="5">
+                        <thead>
+                            <tr>
+                                <th >하위행정구역</td>
+                                <th >면적</td>
+                                <th >인구수</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td >16동</td>
+                                <td >20.12㎢</td>
+                                <td >390,169명</td>
+                            </tr>
+                        </tbody>  
+                    </table>
+                </div>
+            </div>
+
+            <h1 class="btn">양천구</h1>
+            <div data-aos="zoom-in"></div>
+            <div class="modal">
+                <div class="modalcontent">
+                    <span class="close">&times;</span>
+                    <h2>양천구</h2>
+                    <img style="height: 100px;" width="100px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRNV9RS12dDmX5Draut1Mu3bNQOLctvBdKPQ&s" alt="양천구">
+                    <table tableborder="1" width="30%" height=50 tablebgcolor=#11a9c1 bordercolor="blue" cellspacing="5">
+                        <thead>
+                            <tr>
+                                <th >하위행정구역</td>
+                                <th >면적</td>
+                                <th >인구수</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td >18동</td>
+                                <td >17.41㎢</td>
+                                <td >433,307명</td>
+                            </tr>
+                        </tbody>  
+                    </table>
+                </div>
+            </div>
+
+            <h1 class="btn">강서구</h1>
+            <div data-aos="zoom-in"></div>
+            <div class="modal">
+                <div class="modalcontent">
+                    <span class="close">&times;</span>
+                    <h2>강서구</h2>
+                    <img style="height: 100px;" width="150px" src="https://www.newsro.kr/wp-content/uploads/2017/07/%EA%B0%95%EC%84%9C%EA%B5%AC%EC%B2%AD-1.jpg" alt="강서구">
+                    <table tableborder="1" width="30%" height=50 tablebgcolor=#11a9c1 bordercolor="blue" cellspacing="5">
+                        <thead>
+                            <tr>
+                                <th >하위행정구역</td>
+                                <th >면적</td>
+                                <th >인구수</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td >20동</td>
+                                <td >41.44㎢</td>
+                                <td >559,335명</td>
+                            </tr>
+                        </tbody>  
+                    </table>
+                </div>
+            </div>
+
+            <h1 class="btn">마포구</h1>
+            <div data-aos="zoom-in"></div>
+            <div class="modal">
+                <div class="modalcontent">
+                    <span class="close">&times;</span>
+                    <h2>마포구</h2>
+                    <img style="height: 100px;" width="150px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRGMKLnSaUnZfYMrfroy_GAoBTQi__Tm7gBg&s" alt="마포구">
+                    <table tableborder="1" width="30%" height=50 tablebgcolor=#11a9c1 bordercolor="blue" cellspacing="5">
+                        <thead>
+                            <tr>
+                                <th >하위행정구역</td>
+                                <th >면적</td>
+                                <th >인구수</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td >16동</td>
+                                <td >23.85㎢</td>
+                                <td >363,029명</td>
+                            </tr>
+                        </tbody>  
+                    </table>
+                </div>
+            </div>
+
+            <h1 class="btn">용산구</h1>
+            <div data-aos="zoom-in"></div>
+            <div class="modal">
+                <div class="modalcontent">
+                    <span class="close">&times;</span>
+                    <h2>용산구</h2>
+                    <img style="height: 100px;" width="100px" src="https://i.namu.wiki/i/FeyMxyxyedTw3oEJ3FBkEnowPSqF4jTMjARPklkxvwz6rQXAzF60fyruYjjv-yf6sbrROsnCectw7WNtIbGIgQ.svg" alt="용산구">
+                    <table tableborder="1" width="30%" height=50 tablebgcolor=#11a9c1 bordercolor="blue" cellspacing="5">
+                        <thead>
+                            <tr>
+                                <th >하위행정구역</td>
+                                <th >면적</td>
+                                <th >인구수</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td >16동</td>
+                                <td >21.87㎢</td>
+                                <td >206,061명</td>
+                            </tr>
+                        </tbody>  
+                    </table>
+                </div>
+            </div>
+
+            <h1 class="btn">서대문구</h1>
+            <div data-aos="zoom-in"></div>
+            <div class="modal">
+                <div class="modalcontent">
+                    <span class="close">&times;</span>
+                    <h2>서대문구</h2>
+                    <img style="height: 100px;" width="150px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4axF0YmeKD7WPZJimTeiVNtnnzjkK8n_IZ1kNwmbz2hd5BqB_e2MlN1x5ra7SdZueuDw&usqp=CAU" alt="서대문구">
+                    <table tableborder="1" width="30%" height=50 tablebgcolor=#11a9c1 bordercolor="blue" cellspacing="5">
+                        <thead>
+                            <tr>
+                                <th >하위행정구역</td>
+                                <th >면적</td>
+                                <th >인구수</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td >14동</td>
+                                <td >17.63㎢</td>
+                                <td >305,369명</td>
+                            </tr>
+                        </tbody>  
+                    </table>
+                </div>
+            </div>
+
+            <h1 class="btn">은평구</h1>
+            <div data-aos="zoom-in"></div>
+            <div class="modal">
+                <div class="modalcontent">
+                    <span class="close">&times;</span>
+                    <h2>은평구</h2>
+                    <img style="height: 100px;" width="200px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKfhK-dRm-j5NhTdtBR2_UzGzBnDqBOTJeJg&s" alt="은평구">
+                    <table tableborder="1" width="30%" height=50 tablebgcolor=#11a9c1 bordercolor="blue" cellspacing="5">
+                        <thead>
+                            <tr>
+                                <th >하위행정구역</td>
+                                <th >면적</td>
+                                <th >인구수</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td >16동</td>
+                                <td >29.71㎢</td>
+                                <td >464,738명</td>
+                            </tr>
+                        </tbody>  
+                    </table>
+                </div>
+            </div>
+
+            <h1 class="btn">종로구</h1>
+            <div data-aos="zoom-in"></div>
+            <div class="modal">
+                <div class="modalcontent">
+                    <span class="close">&times;</span>
+                    <h2>종로구</h2>
+                    <img style="height: 100px;" width="150px" src="https://i.namu.wiki/i/gzKax2Icu3UIr6xXci7pIg2QuSbfGhj36UZR2eIH6ojNeaUm_jx-WaVyvwmbUDjub5cEsmK7otmbdxNngbhVuw.webp" alt="종로구">
+                    <table tableborder="1" width="30%" height=50 tablebgcolor=#11a9c1 bordercolor="blue" cellspacing="5">
+                        <thead>
+                            <tr>
+                                <th >하위행정구역</td>
+                                <th >면적</td>
+                                <th >인구수</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td >17동</td>
+                                <td >23.91㎢</td>
+                                <td >139,189명</td>
+                            </tr>
+                        </tbody>  
+                    </table>
+                </div>
+            </div>
+
+            <h1 class="btn">성북구</h1>
+            <div data-aos="zoom-in"></div>
+            <div class="modal">
+                <div class="modalcontent">
+                    <span class="close">&times;</span>
+                    <h2>성북구</h2>
+                    <img style="height: 100px;" width="100px" src="https://i.namu.wiki/i/Cgfaxx8C1NKKQa0h56ASY18lK0xj0PfCpltE7s1JYgegq7x8WYEa2MvN_QjMlsfHubSpA3MVwXhFfqOsH9sH-g.svg" alt="성북구">
+                    <table tableborder="1" width="30%" height=50 tablebgcolor=#11a9c1 bordercolor="blue" cellspacing="5">
+                        <thead>
+                            <tr>
+                                <th >하위행정구역</td>
+                                <th >면적</td>
+                                <th >인구수</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td >20동</td>
+                                <td >24.58㎢</td>
+                                <td >424,194명</td>
+                            </tr>
+                        </tbody>  
+                    </table>
+                </div>
+            </div>
+
+            <h1 class="btn">도봉구</h1>
+            <div data-aos="zoom-in"></div>
+            <div class="modal">
+                <div class="modalcontent">
+                    <span class="close">&times;</span>
+                    <h2>도봉구</h2>
+                    <img style="height: 100px;" width="170px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7r2yIZWy0HvZHEfAKMH8mjujb_G8A0SMdDw&s" alt="도봉구">
+                    <table tableborder="1" width="30%" height=50 tablebgcolor=#11a9c1 bordercolor="blue" cellspacing="5">
+                        <thead>
+                            <tr>
+                                <th >하위행정구역</td>
+                                <th >면적</td>
+                                <th >인구수</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td >14동</td>
+                                <td >20.65㎢</td>
+                                <td >305,400명</td>
+                            </tr>
+                        </tbody>  
+                    </table>
+                </div>
+            </div>
+
+            <h1 class="btn">노원구</h1>
+            <div data-aos="zoom-in"></div>
+            <div class="modal">
+                <div class="modalcontent">
+                    <span class="close">&times;</span>
+                    <h2>노원구</h2>
+                    <img style="height: 100px;" width="100px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZo4Uiufgr-GG9iT-Dp-wQj2z2fya0-9IUbA&s" alt="노원구">
+                    <table tableborder="1" width="30%" height=50 tablebgcolor=#11a9c1 bordercolor="blue" cellspacing="5">
+                        <thead>
+                            <tr>
+                                <th >하위행정구역</td>
+                                <th >면적</td>
+                                <th >인구수</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td >19동</td>
+                                <td >35.44㎢</td>
+                                <td >495,183명</td>
+                            </tr>
+                        </tbody>  
+                    </table>
+                </div>
+            </div>
+
+            <h1 class="btn">중랑구</h1>
+            <div data-aos="zoom-in"></div>
+            <div class="modal">
+                <div class="modalcontent">
+                    <span class="close">&times;</span>
+                    <h2>중랑구</h2>
+                    <img style="height: 100px;" width="100px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn9AlVtLtoDqfTRzZXKYLE22OB13xsto3GvA&s" alt="중랑구">
+                    <table tableborder="1" width="30%" height=50 tablebgcolor=#11a9c1 bordercolor="blue" cellspacing="5">
+                        <thead>
+                            <tr>
+                                <th >하위행정구역</td>
+                                <th >면적</td>
+                                <th >인구수</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td >16동</td>
+                                <td >18.5㎢</td>
+                                <td >381,126명</td>
+                            </tr>
+                        </tbody>  
+                    </table>
+                </div>
+            </div>
+
+            <h1 class="btn">광진구</h1>
+            <div data-aos="zoom-in"></div>
+            <div class="modal">
+                <div class="modalcontent">
+                    <span class="close">&times;</span>
+                    <h2>광진구</h2>
+                    <img style="height: 100px;" width="100px" src="https://yt3.googleusercontent.com/EvWFTgMofQ6kFLC5bIzLdKMOD1YOu-YG3Tfle9W2gD2RYkiVGcTmKqnQIoRR_b5fhDpUr8n9Kg=s900-c-k-c0x00ffffff-no-rj" alt="광진구">
+                    <table tableborder="1" width="30%" height=50 tablebgcolor=#11a9c1 bordercolor="blue" cellspacing="5">
+                        <thead>
+                            <tr>
+                                <th >하위행정구역</td>
+                                <th >면적</td>
+                                <th >인구수</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td >15동</td>
+                                <td >17.06㎢</td>
+                                <td >334,159명</td>
+                            </tr>
+                        </tbody>  
+                    </table>
+                </div>
+            </div>
+
+            <h1 class="btn">성동구</h1>
+            <div data-aos="zoom-in"></div>
+            <div class="modal">
+                <div class="modalcontent">
+                    <span class="close">&times;</span>
+                    <h2>성동구</h2>
+                    <img style="height: 100px;" width="100px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxZOkEif1cdJsrmhUVqcrb5IbDI0iWX0kmWQ&s" alt="성동구">
+                    <table tableborder="1" width="30%" height=50 tablebgcolor=#11a9c1 bordercolor="blue" cellspacing="5">
+                        <thead>
+                            <tr>
+                                <th >하위행정구역</td>
+                                <th >면적</td>
+                                <th >인구수</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td >17동</td>
+                                <td >16.86㎢</td>
+                                <td >276,597명</td>
+                            </tr>
+                        </tbody>  
+                    </table>
+                </div>
+            </div>
+
+            <h1 class="btn">동대문구</h1>
+            <div data-aos="zoom-in"></div>
+            <div class="modal">
+                <div class="modalcontent">
+                    <span class="close">&times;</span>
+                    <h2>동대문구</h2>
+                    <img style="height: 100px;" width="100px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT968GQmAcVmvyOnspytzJQdAbt4g78uTtscA&s" alt="동대문구">
+                    <table tableborder="1" width="30%" height=50 tablebgcolor=#11a9c1 bordercolor="blue" cellspacing="5">
+                        <thead>
+                            <tr>
+                                <th >하위행정구역</td>
+                                <th >면적</td>
+                                <th >인구수</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td >14동</td>
+                                <td >14.22㎢</td>
+                                <td >341,345명</td>
+                            </tr>
+                        </tbody>  
+                    </table>
+                </div>
+            </div>
+
+            <h1 class="btn">중구</h1>
+            <div data-aos="zoom-in"></div>
+            <div class="modal">
+                <div class="modalcontent">
+                    <span class="close">&times;</span>
+                    <h2>중구</h2>
+                    <img style="height: 100px;" width="100px" src="https://i.namu.wiki/i/jg-PqrlGrBZIlBCgUxNZBPe1dfVarcF5c3soq4jZigrDBPDM7pC6KQyloZ6vam4O1davozDiiZust8tl-VXIL25rmJ1cDhnwrTNCKp_tyx2jjCtw4_n8l-sg8JowuIZXNCvsnR7KJ6HAU8CAR13vd4hdIySw0VjMIyoUkr1xndQ.svg" alt="중구">
+                    <table tableborder="1" width="30%" height=50 tablebgcolor=#11a9c1 bordercolor="blue" cellspacing="5">
+                        <thead>
+                            <tr>
+                                <th >하위행정구역</td>
+                                <th >면적</td>
+                                <th >인구수</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td >15동</td>
+                                <td >9.96㎢</td>
+                                <td >121,475명</td>
+                            </tr>
+                        </tbody>  
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <div>
+            <img style="height: 573.75px; position: fixed; top: 180px;" width="792.45px"  src="https://cdn.discordapp.com/attachments/1081532035249754133/1254438014944411740/kor1_2019_50-2-removebg-preview.png?ex=66797df1&is=66782c71&hm=d103973b3e6b095e64647a7833b645fdbfc0a275b28faf218f98dce64f41857c&" alt="사진">
+        </div>
+
+        
+    </div>
+</div>
+
+
+    <script>
+        var modals=document.getElementsByClassName("modal");
+        var btns=document.getElementsByClassName("btn");
+        var spanes=document.getElementsByClassName("close");
+        var funcs=[];
+
+        function Modal(num){
+            return function(){
+                btns[num].onclick = function(){
+                    modals[num].style.display="block";
+                    console.log(num);
+                };
+                spanes[num].onclick=function(){
+                    modals[num].style.display="none";
+                };
+            };
+        }
+
+        for(var i=0; i<btns.length;i++){
+            funcs[i]=Modal(i);
+        }
+
+        for(var j=0; j<btns.length; j++){
+            funcs[j]();
+        }
+
+        window.onclick=function(event){
+            if(event.target.className=="modal"){
+                event.target.style.display="none";
+            }
+        };
+
+
+        let observer = new IntersectionObserver((e)=>{
+            e.forEach((박스)=>{
+                if (박스.isIntersecting){
+                    박스.target.style.opactive = 1;
+                }
+            })
+        })
+
+        let btn = document.querySelectorAll('btn')
+        observer.observe(btn[0])
+        observer.observe(btn[1])
+        observer.observe(btn[2])
+        observer.observe(btn[3])
+        observer.observe(btn[4])
+        observer.observe(btn[5])
+        observer.observe(btn[6])
+        observer.observe(btn[7])
+        observer.observe(btn[8])
+        observer.observe(btn[9])
+        observer.observe(btn[10])
+        observer.observe(btn[11])
+        observer.observe(btn[12])
+        observer.observe(btn[13])
+        observer.observe(btn[14])
+        observer.observe(btn[15])
+        observer.observe(btn[16])
+        observer.observe(btn[17])
+        observer.observe(btn[18])
+        observer.observe(btn[19])
+        observer.observe(btn[20])
+        observer.observe(btn[21])
+        observer.observe(btn[22])
+        observer.observe(btn[23])
+        observer.observe(btn[24])
+
+
+    </script>
+</body>
+</html>
